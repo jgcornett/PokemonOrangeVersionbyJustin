@@ -1,0 +1,169 @@
+[gd_scene load_steps=5 format=3 uid="uid://catpxw0c68rm1"]
+
+[ext_resource type="Texture2D" uid="uid://cfbw8vhhly1oa" path="res://d4nf1ln-ad0c7ee0-5f2a-4760-b2e4-f3d41ea42b94.png" id="1_484d0"]
+[ext_resource type="Texture2D" uid="uid://ds6qki67c40vy" path="res://Sprites/6be35ce6cf0976f1d4869de687e3eece.png" id="2_ddyvp"]
+[ext_resource type="Texture2D" uid="uid://cwixdusvuyw6i" path="res://dadsssv-bab6b3de-42b0-458d-a8d6-1954e8b49d12.png" id="3_1s2ho"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_klh6c"]
+bg_color = Color(0, 0.541176, 0.027451, 1)
+
+[node name="Primarinabattle1" type="Node2D"]
+
+[node name="battlescene" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 380.0
+offset_bottom = 223.0
+
+[node name="TextureRect" type="TextureRect" parent="battlescene"]
+layout_mode = 0
+offset_right = 380.0
+offset_bottom = 223.0
+texture = ExtResource("1_484d0")
+
+[node name="pikachusprite1" type="Sprite2D" parent="battlescene/TextureRect"]
+position = Vector2(92.4645, 178.414)
+scale = Vector2(0.28777, 0.316547)
+texture = ExtResource("2_ddyvp")
+
+[node name="primarinasprite1" type="Sprite2D" parent="battlescene/TextureRect"]
+position = Vector2(274.004, 81.6709)
+scale = Vector2(0.679082, 0.668204)
+texture = ExtResource("3_1s2ho")
+
+[node name="Panel" type="Panel" parent="battlescene"]
+layout_mode = 0
+offset_left = 146.0
+offset_top = 167.0
+offset_right = 372.0
+offset_bottom = 216.0
+
+[node name="Button" type="Button" parent="battlescene/Panel"]
+layout_mode = 0
+offset_left = 171.0
+offset_top = 9.0
+offset_right = 218.0
+offset_bottom = 40.0
+text = "Fight"
+
+[node name="run" type="Button" parent="battlescene/Panel"]
+layout_mode = 0
+offset_left = 126.586
+offset_top = 8.93935
+offset_right = 165.586
+offset_bottom = 39.9393
+text = "Run
+"
+
+[node name="exit" type="Button" parent="battlescene/Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.367
+anchor_top = 0.184
+anchor_right = 0.367
+anchor_bottom = 0.184
+offset_left = 2.058
+offset_top = -0.0160007
+offset_right = 39.058
+offset_bottom = 30.984
+text = "Exit"
+
+[node name="battlemenu" type="HBoxContainer" parent="battlescene"]
+layout_mode = 0
+offset_left = 151.0
+offset_top = 170.0
+offset_right = 271.0
+offset_bottom = 214.0
+
+[node name="GridContainer" type="GridContainer" parent="battlescene/battlemenu"]
+layout_mode = 2
+columns = 2
+
+[node name="ThunderShock" type="Button" parent="battlescene/battlemenu/GridContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 7
+text = "Thunder Shock"
+
+[node name="QuickAttack" type="Button" parent="battlescene/battlemenu/GridContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 7
+text = "Quick Attack"
+
+[node name="IronTail" type="Button" parent="battlescene/battlemenu/GridContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 7
+text = "Iron Tail"
+
+[node name="ThunderWave" type="Button" parent="battlescene/battlemenu/GridContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 7
+text = "Thunder Wave"
+
+[node name="primarinahp" type="ProgressBar" parent="battlescene"]
+layout_mode = 0
+offset_left = 227.586
+offset_top = 34.0
+offset_right = 338.586
+offset_bottom = 45.0
+theme_override_font_sizes/font_size = 6
+theme_override_styles/background = SubResource("StyleBoxFlat_klh6c")
+max_value = 50.0
+step = 1.0
+value = 50.0
+
+[node name="pikachuhp" type="ProgressBar" parent="battlescene"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.134
+anchor_top = 0.464
+anchor_right = 0.407
+anchor_bottom = 0.531
+offset_left = -0.0540009
+offset_top = 0.0639954
+offset_right = -0.0670013
+offset_bottom = 0.0559998
+theme_override_font_sizes/font_size = 9
+theme_override_styles/background = SubResource("StyleBoxFlat_klh6c")
+max_value = 50.0
+value = 50.0
+
+[node name="Label" type="Label" parent="battlescene"]
+layout_mode = 0
+offset_left = 7.0
+offset_right = 212.0
+offset_bottom = 26.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "A wild primarina appeared..."
+
+[node name="DelayTimer" type="Timer" parent="battlescene"]
+wait_time = 2.0
+one_shot = true
+
+[node name="Timer" type="Timer" parent="battlescene"]
+wait_time = 2.0
+one_shot = true
+
+[node name="Label2" type="Label" parent="battlescene"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 21.0
+offset_right = 222.0
+offset_bottom = 44.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Pikachu's DEF was lowered! "
+
+[node name="LabelHideTimer" type="Timer" parent="battlescene"]
+wait_time = 2.0
+one_shot = true
+
+[node name="ButtonLabelTimer" type="Timer" parent="battlescene"]
+wait_time = 2.0
+one_shot = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="battlescene"]
+
+[connection signal="pressed" from="battlescene/Panel/Button" to="battlescene" method="_on_button_pressed"]
+[connection signal="pressed" from="battlescene/Panel/run" to="battlescene" method="_on_run_pressed"]
+[connection signal="pressed" from="battlescene/Panel/exit" to="battlescene" method="_on_exit_pressed"]
+[connection signal="pressed" from="battlescene/battlemenu/GridContainer/ThunderShock" to="battlescene" method="_on_thunder_shock_pressed"]
+[connection signal="pressed" from="battlescene/battlemenu/GridContainer/QuickAttack" to="battlescene" method="_on_quick_attack_pressed"]

@@ -1,0 +1,70 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_4fwel"]
+
+[resource]
+script = ExtResource("1_4fwel")
+using_states = PackedStringArray()
+titles = {
+"klawf": "2"
+}
+character_names = PackedStringArray("Klawf")
+first_title = "2"
+lines = {
+"1": {
+"id": "1",
+"next_id": "2",
+"text": "klawf",
+"type": "title"
+},
+"2": {
+"character": "Klawf",
+"character_replacements": Array[Dictionary]([]),
+"id": "2",
+"next_id": "4",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "KLAWF KLAWF!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "KLAWF KLAWF!",
+"type": "dialogue"
+},
+"4": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "4",
+"next_id": "5",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Klawf seems to be sad because his trained abandonned him...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Klawf seems to be sad because his trained abandonned him...",
+"type": "dialogue"
+},
+"5": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "5",
+"next_id": "7",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Poor fella...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Poor fella...",
+"type": "dialogue"
+},
+"7": {
+"id": "7",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+}
+}
+raw_text = "~ klawf
+Klawf: KLAWF KLAWF!
+
+Klawf seems to be sad because his trained abandonned him...
+Poor fella...
+
+=> END"
+metadata/dialogue_manager_version = "2.36.0"

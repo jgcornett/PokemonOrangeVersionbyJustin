@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://boefhp45es6ox"]
+
+[ext_resource type="Script" path="res://area2d1.gd" id="1_8fhm1"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_awarp"]
+radius = 12.4169
+height = 30.1311
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_8fhm1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-103.159, -234.201)
+shape = SubResource("CapsuleShape2D_awarp")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

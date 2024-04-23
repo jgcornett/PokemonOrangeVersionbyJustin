@@ -1,0 +1,250 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_4kucg"]
+
+[resource]
+script = ExtResource("1_4kucg")
+using_states = PackedStringArray()
+titles = {
+"jewfro1": "3"
+}
+character_names = PackedStringArray("Jewphro")
+first_title = "3"
+lines = {
+"1": {
+"id": "1",
+"next_id": "3",
+"text": "jewfro1",
+"type": "title"
+},
+"10": {
+"character": "Jewphro",
+"character_replacements": Array[Dictionary]([]),
+"id": "10",
+"next_id": "11",
+"notes": "",
+"parent_id": "9",
+"tags": PackedStringArray(),
+"text": "In 2007, I was able to beat Cynthia and become the champion. I was so happy i rushed to my terrorist brother Anotine.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "In 2007, I was able to beat Cynthia and become the champion. I was so happy i rushed to my terrorist brother Anotine.",
+"type": "dialogue"
+},
+"11": {
+"character": "Jewphro",
+"character_replacements": Array[Dictionary]([]),
+"id": "11",
+"next_id": "12",
+"notes": "",
+"parent_id": "9",
+"tags": PackedStringArray(),
+"text": "His ass fucking said he wasn't impressed so I deleted his save file on Pokemon Red.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "His ass fucking said he wasn't impressed so I deleted his save file on Pokemon Red.",
+"type": "dialogue"
+},
+"12": {
+"character": "Jewphro",
+"character_replacements": Array[Dictionary]([]),
+"id": "12",
+"next_id": "13",
+"notes": "",
+"parent_id": "9",
+"tags": PackedStringArray(),
+"text": "Bitch nigga didn't do shit faggot ass...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Bitch nigga didn't do shit faggot ass...",
+"type": "dialogue"
+},
+"13": {
+"id": "13",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "9",
+"type": "goto"
+},
+"14": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "14",
+"next_id": "15",
+"next_id_after": "20",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "What are your pronouns?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "What are your pronouns?",
+"type": "response"
+},
+"15": {
+"character": "Jewphro",
+"character_replacements": Array[Dictionary]([]),
+"id": "15",
+"next_id": "16",
+"notes": "",
+"parent_id": "14",
+"tags": PackedStringArray(),
+"text": "I go by they/them pronouns along with ze/zir... Just kidding that's faggot shit.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I go by they/them pronouns along with ze/zir... Just kidding that's faggot shit.",
+"type": "dialogue"
+},
+"16": {
+"character": "Jewphro",
+"character_replacements": Array[Dictionary]([]),
+"id": "16",
+"next_id": "17",
+"notes": "",
+"parent_id": "14",
+"tags": PackedStringArray(),
+"text": "I am a man with a little but very masculine penis.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I am a man with a little but very masculine penis.",
+"type": "dialogue"
+},
+"17": {
+"character": "Jewphro",
+"character_replacements": Array[Dictionary]([]),
+"id": "17",
+"next_id": "18",
+"notes": "",
+"parent_id": "14",
+"tags": PackedStringArray(),
+"text": "You can even check out my only fans!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "You can even check out my only fans!",
+"type": "dialogue"
+},
+"18": {
+"id": "18",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "14",
+"type": "goto"
+},
+"19": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "19",
+"next_id": "20",
+"next_id_after": "20",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Bye!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Bye!",
+"type": "response"
+},
+"20": {
+"id": "20",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"3": {
+"character": "Jewphro",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "4",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Hello! I am the champion of this game! How can I help you?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hello! I am the champion of this game! How can I help you?",
+"type": "dialogue"
+},
+"4": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "4",
+"next_id": "5",
+"next_id_after": "20",
+"notes": "",
+"responses": PackedStringArray("4", "9", "14", "19"),
+"tags": PackedStringArray(),
+"text": "How big is your dick?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "How big is your dick?",
+"type": "response"
+},
+"5": {
+"character": "Jewphro",
+"character_replacements": Array[Dictionary]([]),
+"id": "5",
+"next_id": "6",
+"notes": "",
+"parent_id": "4",
+"tags": PackedStringArray(),
+"text": "About 4 cm long and 2cm in width.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "About 4 cm long and 2cm in width.",
+"type": "dialogue"
+},
+"6": {
+"character": "Jewphro",
+"character_replacements": Array[Dictionary]([]),
+"id": "6",
+"next_id": "7",
+"notes": "",
+"parent_id": "4",
+"tags": PackedStringArray(),
+"text": "My wife says it's not about how big is is... but how you use it.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "My wife says it's not about how big is is... but how you use it.",
+"type": "dialogue"
+},
+"7": {
+"character": "Jewphro",
+"character_replacements": Array[Dictionary]([]),
+"id": "7",
+"next_id": "8",
+"notes": "",
+"parent_id": "4",
+"tags": PackedStringArray(),
+"text": "I took a small penis intercourse class so I can utilize my short status to my advantage.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I took a small penis intercourse class so I can utilize my short status to my advantage.",
+"type": "dialogue"
+},
+"8": {
+"id": "8",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "4",
+"type": "goto"
+},
+"9": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "9",
+"next_id": "10",
+"next_id_after": "20",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "What region's elite 4 did you beat first?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "What region's elite 4 did you beat first?",
+"type": "response"
+}
+}
+raw_text = "~ jewfro1
+
+Jewphro: Hello! I am the champion of this game! How can I help you?
+- How big is your dick?
+	Jewphro: About 4 cm long and 2cm in width.
+	Jewphro: My wife says it's not about how big is is... but how you use it.
+	Jewphro: I took a small penis intercourse class so I can utilize my short status to my advantage.
+	=> END
+- What region's elite 4 did you beat first?
+	Jewphro: In 2007, I was able to beat Cynthia and become the champion. I was so happy i rushed to my terrorist brother Anotine.
+	Jewphro: His ass fucking said he wasn't impressed so I deleted his save file on Pokemon Red.
+	Jewphro: Bitch nigga didn't do shit faggot ass...
+	=> END
+- What are your pronouns?
+	Jewphro: I go by they/them pronouns along with ze/zir... Just kidding that's faggot shit.
+	Jewphro: I am a man with a little but very masculine penis.
+	Jewphro: You can even check out my only fans!
+	=> END
+- Bye!
+=> END"
+metadata/dialogue_manager_version = "2.36.0"

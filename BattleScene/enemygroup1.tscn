@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://phgyw4qg7vva"]
+
+[ext_resource type="Script" path="res://BattleScene/enemygroup1.gd" id="1_71mii"]
+[ext_resource type="PackedScene" uid="uid://d37dccqv3cqp7" path="res://BattleSprites/sentretbattlesprite.tscn" id="2_a6564"]
+
+[node name="enemygroup1" type="Node2D"]
+script = ExtResource("1_71mii")
+
+[node name="Sentretbattlesprite" parent="." instance=ExtResource("2_a6564")]
+
+[editable path="Sentretbattlesprite"]

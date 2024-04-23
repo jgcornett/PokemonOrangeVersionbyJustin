@@ -1,0 +1,67 @@
+[gd_scene load_steps=6 format=3 uid="uid://d37dccqv3cqp7"]
+
+[ext_resource type="Texture2D" uid="uid://b124cr35ql2eo" path="res://Sprites/gFAF5b7uyTfDhfewIcmpEVus.png" id="1_ugaxh"]
+[ext_resource type="Texture2D" uid="uid://lcp5cok44u7s" path="res://Sprites/pngtree-3d-rendering-of-pointing-hand-gesture-png-image_6540596.png" id="2_o70lk"]
+
+[sub_resource type="Animation" id="Animation_kqp53"]
+resource_name = "hurt"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(30, 30, 30, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_rnmik"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(30, 30, 30, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2iyom"]
+_data = {
+"RESET": SubResource("Animation_rnmik"),
+"hurt": SubResource("Animation_kqp53")
+}
+
+[node name="Sentretbattlesprite" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+self_modulate = Color(30, 30, 30, 1)
+position = Vector2(-1, 0.5)
+scale = Vector2(0.611111, 0.59375)
+texture = ExtResource("1_ugaxh")
+
+[node name="focus" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-57, -23)
+rotation = 0.888334
+scale = Vector2(0.15, 0.138889)
+texture = ExtResource("2_o70lk")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_left = -58.0
+offset_top = -81.0
+offset_right = 60.0
+offset_bottom = -54.0
+value = 100.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_2iyom")
+}

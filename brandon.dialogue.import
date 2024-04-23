@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://c52ickl8ab7rj"
+path="res://.godot/imported/brandon.dialogue-444866511c7312477362e488bb15b199.tres"
+
+[deps]
+
+source_file="res://brandon.dialogue"
+dest_files=["res://.godot/imported/brandon.dialogue-444866511c7312477362e488bb15b199.tres"]
+
+[params]
+
+defaults=true

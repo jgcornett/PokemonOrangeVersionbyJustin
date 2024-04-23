@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://82mix1kwrjay"]
+
+[ext_resource type="Script" path="res://enemy.gd" id="1_q5hlf"]
+[ext_resource type="Texture2D" uid="uid://8i7j4b40smq8" path="res://platinum_looker_overworld_sprites__ripped__by_maicerochico_das5sy3.png" id="2_jfeph"]
+[ext_resource type="PackedScene" uid="uid://cvjcxpgyrr737" path="res://wander.tscn" id="3_mgqba"]
+
+[node name="enemy" type="CharacterBody2D" node_paths=PackedStringArray("wander_direction")]
+script = ExtResource("1_q5hlf")
+wander_direction = NodePath("Wander")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(8, 8)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_jfeph")
+hframes = 4
+vframes = 4
+
+[node name="Wander" parent="." instance=ExtResource("3_mgqba")]
+group_name = "FirstEnemy"

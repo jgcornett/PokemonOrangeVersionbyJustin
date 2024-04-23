@@ -1,0 +1,146 @@
+[gd_scene load_steps=9 format=3 uid="uid://bny6uq6s3u8wv"]
+
+[ext_resource type="Script" path="res://battle scene.gd" id="1_fdf1b"]
+[ext_resource type="Texture2D" uid="uid://hbhn5lqfdcso" path="res://Sprites/14446594531140274907dpblatle-1 (1)-md.png" id="2_lgsly"]
+[ext_resource type="Texture2D" uid="uid://b124cr35ql2eo" path="res://Sprites/gFAF5b7uyTfDhfewIcmpEVus.png" id="3_8h81w"]
+[ext_resource type="Texture2D" uid="uid://ds6qki67c40vy" path="res://Sprites/6be35ce6cf0976f1d4869de687e3eece.png" id="4_6s2ux"]
+
+[sub_resource type="Animation" id="Animation_ky1li"]
+resource_name = "FadeIn"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_pjtf1"]
+resource_name = "FadeOut"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_k6byn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_u52ym"]
+_data = {
+"FadeIn": SubResource("Animation_ky1li"),
+"FadeOut": SubResource("Animation_pjtf1"),
+"RESET": SubResource("Animation_k6byn")
+}
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="battle scene" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fdf1b")
+
+[node name="background" type="TextureRect" parent="battle scene"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = -1.0
+offset_right = 380.0
+offset_bottom = 225.0
+texture = ExtResource("2_lgsly")
+expand_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="battle scene/background"]
+position = Vector2(283.475, 82.8568)
+scale = Vector2(0.33338, 0.271385)
+texture = ExtResource("3_8h81w")
+
+[node name="Sprite2D2" type="Sprite2D" parent="battle scene/background"]
+position = Vector2(92.495, 134.321)
+scale = Vector2(0.240581, 0.248274)
+texture = ExtResource("4_6s2ux")
+
+[node name="Panel" type="Panel" parent="battle scene/background"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 174.0
+offset_right = 354.0
+offset_bottom = 222.0
+
+[node name="Button" type="Button" parent="battle scene/background/Panel"]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 1.0
+offset_right = 402.0
+offset_bottom = 63.0
+scale = Vector2(0.35, 0.35)
+text = "FIGHT"
+
+[node name="Button2" type="Button" parent="battle scene/background/Panel"]
+layout_mode = 0
+offset_left = 246.0
+offset_top = 1.0
+offset_right = 356.0
+offset_bottom = 63.0
+scale = Vector2(0.35, 0.35)
+pivot_offset = Vector2(0.760498, -0.0145416)
+text = "RUN
+"
+
+[node name="Label" type="Label" parent="battle scene/background/Panel"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 1.0
+offset_right = 171.0
+offset_bottom = 28.0
+scale = Vector2(0.608171, 0.571779)
+theme_override_font_sizes/font_size = 12
+text = "A wild sentret appeared"
+autowrap_mode = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="battle scene"]
+libraries = {
+"": SubResource("AnimationLibrary_u52ym")
+}
+
+[node name="ColorRect" type="ColorRect" parent="battle scene"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_right = 1.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0)

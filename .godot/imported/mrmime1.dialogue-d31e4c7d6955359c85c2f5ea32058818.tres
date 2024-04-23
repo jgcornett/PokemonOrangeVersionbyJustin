@@ -1,0 +1,83 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_mmv83"]
+
+[resource]
+script = ExtResource("1_mmv83")
+using_states = PackedStringArray()
+titles = {
+"mrmime1": "3"
+}
+character_names = PackedStringArray("Mr. Mime", "Wallace")
+first_title = "3"
+lines = {
+"1": {
+"id": "1",
+"next_id": "3",
+"text": "mrmime1",
+"type": "title"
+},
+"3": {
+"character": "Mr. Mime",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "4",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Mr. Mime!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Mr. Mime!",
+"type": "dialogue"
+},
+"4": {
+"character": "Wallace",
+"character_replacements": Array[Dictionary]([]),
+"id": "4",
+"next_id": "5",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "How the are you a girl named Mr. Mime?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "How the are you a girl named Mr. Mime?",
+"type": "dialogue"
+},
+"5": {
+"character": "Mr. Mime",
+"character_replacements": Array[Dictionary]([]),
+"id": "5",
+"next_id": "6",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Mime!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Mime!",
+"type": "dialogue"
+},
+"6": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "6",
+"next_id": "8",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Mr. Mime seems offended...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Mr. Mime seems offended...",
+"type": "dialogue"
+},
+"8": {
+"id": "8",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+}
+}
+raw_text = "~ mrmime1
+
+Mr. Mime: Mr. Mime!
+Wallace: How the are you a girl named Mr. Mime?
+Mr. Mime: Mime! 
+Mr. Mime seems offended...
+
+=> END"
+metadata/dialogue_manager_version = "2.36.0"

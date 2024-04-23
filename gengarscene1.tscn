@@ -1,0 +1,50 @@
+[gd_scene load_steps=4 format=3 uid="uid://bbkop1mfymeua"]
+
+[ext_resource type="Script" path="res://gengar1.gd" id="1_w5aaj"]
+[ext_resource type="Texture2D" uid="uid://be84vet6el1v5" path="res://6424D197-5B52-4AE0-B757-DCA5B1219506.jpeg" id="2_cmx6n"]
+[ext_resource type="AudioStream" uid="uid://ch1gtavovyrwt" path="res://youtube_jyWq6gY7SZk_audio.mp3" id="3_06f6m"]
+
+[node name="Mewtwosecene2" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 382.0
+offset_bottom = 225.0
+script = ExtResource("1_w5aaj")
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_right = 381.0
+offset_bottom = 227.0
+texture = ExtResource("2_cmx6n")
+expand_mode = 1
+
+[node name="Panel" type="Panel" parent="Control/TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.564416
+anchor_top = 0.213333
+anchor_right = -0.564416
+anchor_bottom = 0.213333
+offset_left = 234.043
+offset_top = 122.573
+offset_right = 355.043
+offset_bottom = 162.573
+metadata/_edit_use_anchors_ = true
+
+[node name="next" type="Button" parent="Control/TextureRect/Panel"]
+layout_mode = 0
+offset_left = 9.60663
+offset_top = 4.24265
+offset_right = 110.607
+offset_bottom = 35.2426
+text = "NEXT"
+metadata/_edit_use_anchors_ = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_06f6m")
+autoplay = true
+
+[connection signal="pressed" from="Control/TextureRect/Panel/next" to="Control" method="_on_next_pressed"]

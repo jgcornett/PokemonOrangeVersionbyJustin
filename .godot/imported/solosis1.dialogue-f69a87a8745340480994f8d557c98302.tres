@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_lhxab"]
+
+[resource]
+script = ExtResource("1_lhxab")
+using_states = PackedStringArray()
+titles = {
+"solosis1": "2"
+}
+character_names = PackedStringArray("Solosis")
+first_title = "2"
+lines = {
+"1": {
+"id": "1",
+"next_id": "2",
+"text": "solosis1",
+"type": "title"
+},
+"2": {
+"character": "Solosis",
+"character_replacements": Array[Dictionary]([]),
+"id": "2",
+"next_id": "3",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "SOLLL.... SOLLL....",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "SOLLL.... SOLLL....",
+"type": "dialogue"
+},
+"3": {
+"character": "Solosis",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "4",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "SOLOSIS... SOL-LISSS.... OSSIS...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "SOLOSIS... SOL-LISSS.... OSSIS...",
+"type": "dialogue"
+},
+"4": {
+"id": "4",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+}
+}
+raw_text = "~ solosis1
+Solosis: SOLLL.... SOLLL....
+Solosis: SOLOSIS... SOL-LISSS.... OSSIS... 
+=> END"
+metadata/dialogue_manager_version = "2.36.0"

@@ -1,0 +1,55 @@
+[gd_scene load_steps=5 format=3 uid="uid://civ4fx38nhudj"]
+
+[ext_resource type="Script" path="res://battlescene.gd" id="1_n5rme"]
+[ext_resource type="Texture2D" uid="uid://cqnxmcjpgev0o" path="res://382vb6.png" id="2_hgxkb"]
+[ext_resource type="Texture2D" uid="uid://b124cr35ql2eo" path="res://Sprites/gFAF5b7uyTfDhfewIcmpEVus.png" id="3_2wbow"]
+[ext_resource type="Texture2D" uid="uid://ds6qki67c40vy" path="res://Sprites/6be35ce6cf0976f1d4869de687e3eece.png" id="4_hklc8"]
+
+[node name="battlescene" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 381.0
+offset_bottom = 225.0
+script = ExtResource("1_n5rme")
+
+[node name="background" type="TextureRect" parent="."]
+offset_right = 382.0
+offset_bottom = 224.0
+texture = ExtResource("2_hgxkb")
+expand_mode = 2
+
+[node name="sentretsprite1" type="Sprite2D" parent="background"]
+position = Vector2(276, 93)
+scale = Vector2(0.482269, 0.432624)
+texture = ExtResource("3_2wbow")
+
+[node name="pikachusprite1" type="Sprite2D" parent="background"]
+position = Vector2(92.4645, 177.414)
+scale = Vector2(0.28777, 0.316547)
+texture = ExtResource("4_hklc8")
+
+[node name="Panel" type="Panel" parent="background"]
+layout_mode = 0
+offset_left = 146.0
+offset_top = 167.0
+offset_right = 372.0
+offset_bottom = 216.0
+
+[node name="Button" type="Button" parent="background/Panel"]
+layout_mode = 0
+offset_left = 171.0
+offset_top = 9.0
+offset_right = 218.0
+offset_bottom = 40.0
+text = "Fight"
+
+[node name="run" type="Button" parent="background/Panel"]
+layout_mode = 0
+offset_left = 126.586
+offset_top = 8.93935
+offset_right = 165.586
+offset_bottom = 39.9393
+text = "Run
+"
+
+[connection signal="pressed" from="background/Panel/run" to="." method="_on_run_pressed"]

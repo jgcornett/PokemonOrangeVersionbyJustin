@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3 uid="uid://dd7y7nmnjhno3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tck7n"]
+size = Vector2(64, 368)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jkd1r"]
+size = Vector2(416, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1d6c6"]
+size = Vector2(64, 304)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_obmqg"]
+size = Vector2(144, 80)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sik1b"]
+size = Vector2(160, 80)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vnuxc"]
+radius = 21.6976
+height = 95.0464
+
+[node name="Area2D" type="Area2D"]
+input_pickable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-16, 120)
+shape = SubResource("RectangleShape2D_tck7n")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(224, 272)
+shape = SubResource("RectangleShape2D_jkd1r")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(400, 88)
+shape = SubResource("RectangleShape2D_1d6c6")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
+position = Vector2(88, -24)
+shape = SubResource("RectangleShape2D_obmqg")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="."]
+position = Vector2(288, -24)
+shape = SubResource("RectangleShape2D_sik1b")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="."]
+position = Vector2(184, -39)
+scale = Vector2(1.4, 1.4)
+shape = SubResource("CapsuleShape2D_vnuxc")

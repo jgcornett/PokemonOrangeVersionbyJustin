@@ -1,0 +1,28 @@
+[gd_resource type="AnimatedTexture" load_steps=9 format=3 uid="uid://bb44dapa1k6a3"]
+
+[ext_resource type="Texture2D" uid="uid://da2tyhj2ytevk" path="res://Assets/Water/water_tileset8.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://cj0sy2xhit6d6" path="res://Assets/Water/water_tileset2.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://cap2o63evbano" path="res://Assets/Water/water_tileset5.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://bb7ult8t40pvh" path="res://Assets/Water/water_tileset6.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://dvlh8v6vb0yxh" path="res://Assets/Water/water_tileset7.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://bdmnbp5uv50t8" path="res://Assets/Water/water_tileset1.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://dnwp5pipubhvp" path="res://Assets/Water/water_tileset3.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://c22pohrvnvk1f" path="res://Assets/Water/water_tileset4.png" id="8"]
+
+[resource]
+frames = 8
+frame_0/texture = ExtResource("6")
+frame_1/texture = ExtResource("2")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("7")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("8")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("3")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("4")
+frame_5/duration = 1.0
+frame_6/texture = ExtResource("5")
+frame_6/duration = 1.0
+frame_7/texture = ExtResource("1")
+frame_7/duration = 1.0

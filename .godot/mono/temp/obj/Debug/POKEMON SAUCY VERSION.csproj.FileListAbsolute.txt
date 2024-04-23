@@ -1,0 +1,17 @@
+C:\Users\12565\Documents\POKEMON SAUCY VERSION\.godot\mono\temp\obj\Debug\POKEMON SAUCY VERSION.csproj.AssemblyReference.cache
+C:\Users\12565\Documents\POKEMON SAUCY VERSION\.godot\mono\temp\obj\Debug\POKEMON SAUCY VERSION.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\12565\Documents\POKEMON SAUCY VERSION\.godot\mono\temp\obj\Debug\POKEMON SAUCY VERSION.AssemblyInfoInputs.cache
+C:\Users\12565\Documents\POKEMON SAUCY VERSION\.godot\mono\temp\obj\Debug\POKEMON SAUCY VERSION.AssemblyInfo.cs
+C:\Users\12565\Documents\POKEMON SAUCY VERSION\.godot\mono\temp\obj\Debug\POKEMON SAUCY VERSION.csproj.CoreCompileInputs.cache
+C:\Users\12565\Documents\POKEMON SAUCY VERSION\.godot\mono\temp\bin\Debug\POKEMON SAUCY VERSION.deps.json
+C:\Users\12565\Documents\POKEMON SAUCY VERSION\.godot\mono\temp\bin\Debug\POKEMON SAUCY VERSION.runtimeconfig.json
+C:\Users\12565\Documents\POKEMON SAUCY VERSION\.godot\mono\temp\bin\Debug\POKEMON SAUCY VERSION.dll
+C:\Users\12565\Documents\POKEMON SAUCY VERSION\.godot\mono\temp\bin\Debug\POKEMON SAUCY VERSION.pdb
+C:\Users\12565\Documents\POKEMON SAUCY VERSION\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\12565\Documents\POKEMON SAUCY VERSION\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\12565\Documents\POKEMON SAUCY VERSION\.godot\mono\temp\obj\Debug\POKEMON SAUCY VERSION.csproj.CopyComplete
+C:\Users\12565\Documents\POKEMON SAUCY VERSION\.godot\mono\temp\obj\Debug\POKEMON SAUCY VERSION.dll
+C:\Users\12565\Documents\POKEMON SAUCY VERSION\.godot\mono\temp\obj\Debug\refint\POKEMON SAUCY VERSION.dll
+C:\Users\12565\Documents\POKEMON SAUCY VERSION\.godot\mono\temp\obj\Debug\POKEMON SAUCY VERSION.pdb
+C:\Users\12565\Documents\POKEMON SAUCY VERSION\.godot\mono\temp\obj\Debug\POKEMON SAUCY VERSION.genruntimeconfig.cache
+C:\Users\12565\Documents\POKEMON SAUCY VERSION\.godot\mono\temp\obj\Debug\ref\POKEMON SAUCY VERSION.dll

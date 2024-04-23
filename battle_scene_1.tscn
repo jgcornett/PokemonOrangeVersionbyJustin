@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bpq0625tlo2rd"]
+
+[ext_resource type="PackedScene" uid="uid://bny6uq6s3u8wv" path="res://canvas_layer.tscn" id="1_x8tom"]
+
+[node name="BattleScene1" type="Node2D"]
+
+[node name="CanvasLayer" parent="." instance=ExtResource("1_x8tom")]

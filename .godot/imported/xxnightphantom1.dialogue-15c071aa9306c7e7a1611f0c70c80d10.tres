@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_0qa1g"]
+
+[resource]
+script = ExtResource("1_0qa1g")
+using_states = PackedStringArray()
+titles = {
+"xxnightphantom1": "2"
+}
+character_names = PackedStringArray("Susan")
+first_title = "2"
+lines = {
+"1": {
+"id": "1",
+"next_id": "2",
+"text": "xxnightphantom1",
+"type": "title"
+},
+"2": {
+"character": "Susan",
+"character_replacements": Array[Dictionary]([]),
+"id": "2",
+"next_id": "3",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Hello! How can I help you?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hello! How can I help you?",
+"type": "dialogue"
+},
+"3": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "4",
+"next_id_after": "9",
+"notes": "",
+"responses": PackedStringArray("3", "7"),
+"tags": PackedStringArray(),
+"text": "Where am I?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Where am I?",
+"type": "response"
+},
+"4": {
+"character": "Susan",
+"character_replacements": Array[Dictionary]([]),
+"id": "4",
+"next_id": "5",
+"notes": "",
+"parent_id": "3",
+"tags": PackedStringArray(),
+"text": "The United States of America... Just kidding you are in the deep cave.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "The United States of America... Just kidding you are in the deep cave.",
+"type": "dialogue"
+},
+"5": {
+"character": "Susan",
+"character_replacements": Array[Dictionary]([]),
+"id": "5",
+"next_id": "6",
+"notes": "",
+"parent_id": "3",
+"tags": PackedStringArray(),
+"text": "After the next ladder you will be unable to venture backwards.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "After the next ladder you will be unable to venture backwards.",
+"type": "dialogue"
+},
+"6": {
+"character": "Susan",
+"character_replacements": Array[Dictionary]([]),
+"id": "6",
+"next_id": "9",
+"notes": "",
+"parent_id": "3",
+"tags": PackedStringArray(),
+"text": "There are lots of strong trainers and pokemon ahead! So good luck!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "There are lots of strong trainers and pokemon ahead! So good luck!",
+"type": "dialogue"
+},
+"7": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "7",
+"next_id": "8",
+"next_id_after": "9",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "What's your favorite Pokemon?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "What's your favorite Pokemon?",
+"type": "response"
+},
+"8": {
+"character": "Susan",
+"character_replacements": Array[Dictionary]([]),
+"id": "8",
+"next_id": "9",
+"notes": "",
+"parent_id": "7",
+"tags": PackedStringArray(),
+"text": "Eevee! I love the variety of evolutions the species has!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Eevee! I love the variety of evolutions the species has!",
+"type": "dialogue"
+},
+"9": {
+"id": "9",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+}
+}
+raw_text = "~ xxnightphantom1
+Susan: Hello! How can I help you?
+- Where am I?
+	Susan: The United States of America... Just kidding you are in the deep cave.
+	Susan: After the next ladder you will be unable to venture backwards.
+	Susan: There are lots of strong trainers and pokemon ahead! So good luck!
+- What's your favorite Pokemon?
+	Susan: Eevee! I love the variety of evolutions the species has!
+=> END"
+metadata/dialogue_manager_version = "2.36.0"

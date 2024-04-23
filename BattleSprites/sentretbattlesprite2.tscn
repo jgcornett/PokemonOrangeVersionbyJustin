@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://dp8yubyyrpls4"]
+
+[ext_resource type="Texture2D" uid="uid://b124cr35ql2eo" path="res://Sprites/gFAF5b7uyTfDhfewIcmpEVus.png" id="1_uamci"]
+[ext_resource type="Script" path="res://BattleSprites/sentret1logic.gd" id="1_um1xn"]
+[ext_resource type="Texture2D" uid="uid://lcp5cok44u7s" path="res://Sprites/pngtree-3d-rendering-of-pointing-hand-gesture-png-image_6540596.png" id="2_fye2i"]
+
+[node name="Sentretbattlesprite" type="CharacterBody2D"]
+script = ExtResource("1_um1xn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1, 0.5)
+scale = Vector2(0.611111, 0.59375)
+texture = ExtResource("1_uamci")
+
+[node name="focus" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-57, -23)
+rotation = 0.888334
+scale = Vector2(0.15, 0.138889)
+texture = ExtResource("2_fye2i")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_left = -58.0
+offset_top = -81.0
+offset_right = 60.0
+offset_bottom = -54.0
+value = 100.0

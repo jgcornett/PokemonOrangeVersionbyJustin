@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://feqa33melhx8"]
+
+[ext_resource type="Script" path="res://BattleSprites/player_group1.gd" id="1_v5tpx"]
+[ext_resource type="PackedScene" uid="uid://dp8yubyyrpls4" path="res://BattleSprites/sentretbattlesprite2.tscn" id="2_d76ga"]
+[ext_resource type="Texture2D" uid="uid://ds6qki67c40vy" path="res://Sprites/6be35ce6cf0976f1d4869de687e3eece.png" id="3_d2ibs"]
+
+[node name="Playerpikachu" type="Node2D"]
+script = ExtResource("1_v5tpx")
+
+[node name="pikachubattlesprite" parent="." instance=ExtResource("2_d76ga")]
+
+[node name="Sprite2D" parent="pikachubattlesprite" index="0"]
+position = Vector2(64, 48)
+scale = Vector2(0.240907, 0.291423)
+texture = ExtResource("3_d2ibs")
+
+[editable path="pikachubattlesprite"]

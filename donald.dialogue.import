@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://cjhcir025bgxg"
+path="res://.godot/imported/donald.dialogue-41116df03a82afb4948e768e8d88a0be.tres"
+
+[deps]
+
+source_file="res://donald.dialogue"
+dest_files=["res://.godot/imported/donald.dialogue-41116df03a82afb4948e768e8d88a0be.tres"]
+
+[params]
+
+defaults=true

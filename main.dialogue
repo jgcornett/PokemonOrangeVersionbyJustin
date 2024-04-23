@@ -1,0 +1,25 @@
+~ main
+Donald: Hello! Welcome!
+- What are the starters in this region?
+	Donald: We have the fire type Bublasaur, the water type Charmander, and the grass type Squirtle. You also have the option to pick an electric type known as Pikachu!
+	Donald: Bulbasaur's final evolution is Fire/Grass, Charmander's final evolution is Water/Ice, and Squrtle's final evolution is Grass/Fairy!
+	Donald: All four of these starters have their benefits for your journey.
+	Donald: Although there has been a recent revelation in the past 2 weeks... Pikachu has a newly discovered evolution.
+	Donald: Pikachu's newly discovered evolution is currently a mystery as we are still tying to figure out how to obtain it.
+	Donald: There are currently only 4 known trainers with this new evolution of Pikachu.
+	Donald: This new evolution gives Pikachu an oversized build along with a giant horn and a spiky tail. Not much is known...
+	Donald: As the four players chose to keep their new pikachus hidden, only 4 photos have surfaced...
+	Donald: LOL
+	=> END
+- How many gyms in this region are there?
+	Donald: This region features a mix of gym challenges along with trial challenges.
+	Donald: The first gym leader in this region is currently Captain Kenneth the Dragon Tamer.
+	Donald: His team features a dratini, dragonair, seadra, and an applin.
+	Donald: I would suggest catching an ice or fairy type. Dragon attacks are ineffective against Fairy types.
+	=> END
+ - Who are the criminals?
+	Donald: Yo mama son!
+	=> END
+- Bye!
+	=> END
+=> END

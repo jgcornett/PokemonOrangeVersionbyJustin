@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_ovp5b"]
+
+[resource]
+script = ExtResource("1_ovp5b")
+using_states = PackedStringArray()
+titles = {
+"yungoos1": "2"
+}
+character_names = PackedStringArray("Yungoos")
+first_title = "2"
+lines = {
+"1": {
+"id": "1",
+"next_id": "2",
+"text": "yungoos1",
+"type": "title"
+},
+"2": {
+"character": "Yungoos",
+"character_replacements": Array[Dictionary]([]),
+"id": "2",
+"next_id": "3",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Yungooos!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Yungooos!",
+"type": "dialogue"
+},
+"3": {
+"character": "Yungoos",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "4",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Goos goossssungoos yun yungoos!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Goos goossssungoos yun yungoos!",
+"type": "dialogue"
+},
+"4": {
+"id": "4",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+}
+}
+raw_text = "~ yungoos1
+Yungoos: Yungooos! 
+Yungoos: Goos goossssungoos yun yungoos!
+=> END"
+metadata/dialogue_manager_version = "2.36.0"

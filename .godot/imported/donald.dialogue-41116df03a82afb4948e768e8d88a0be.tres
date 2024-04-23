@@ -1,0 +1,525 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_br5n5"]
+
+[resource]
+script = ExtResource("1_br5n5")
+using_states = PackedStringArray()
+titles = {
+"start": "2"
+}
+character_names = PackedStringArray("Donald")
+first_title = "2"
+lines = {
+"1": {
+"id": "1",
+"next_id": "2",
+"text": "start",
+"type": "title"
+},
+"10": {
+"character": "Donald",
+"character_replacements": Array[Dictionary]([]),
+"id": "10",
+"next_id": "11",
+"notes": "",
+"parent_id": "6",
+"tags": PackedStringArray(),
+"text": "We have been through so much together.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "We have been through so much together.",
+"type": "dialogue"
+},
+"11": {
+"id": "11",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "6",
+"type": "goto"
+},
+"12": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "12",
+"next_id": "13",
+"next_id_after": "39",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "What are the starters in this region?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "What are the starters in this region?",
+"type": "response"
+},
+"13": {
+"character": "Donald",
+"character_replacements": Array[Dictionary]([]),
+"id": "13",
+"next_id": "14",
+"notes": "",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "We have the fire type Bublasaur, the water type Charmander, and the grass type Squirtle. You also have the option to pick a Pikachu that evolves into a Electric/Water type.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "We have the fire type Bublasaur, the water type Charmander, and the grass type Squirtle. You also have the option to pick a Pikachu that evolves into a Electric/Water type.",
+"type": "dialogue"
+},
+"14": {
+"character": "Donald",
+"character_replacements": Array[Dictionary]([]),
+"id": "14",
+"next_id": "15",
+"notes": "",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Bulbasaur's final evolution is Fire/Grass.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Bulbasaur's final evolution is Fire/Grass.",
+"type": "dialogue"
+},
+"15": {
+"character": "Donald",
+"character_replacements": Array[Dictionary]([]),
+"id": "15",
+"next_id": "16",
+"notes": "",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Charmander's final evolution is Water/Ice.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Charmander's final evolution is Water/Ice.",
+"type": "dialogue"
+},
+"16": {
+"character": "Donald",
+"character_replacements": Array[Dictionary]([]),
+"id": "16",
+"next_id": "17",
+"notes": "",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Squirtle's final evolution is Grass/Fairy.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Squirtle's final evolution is Grass/Fairy.",
+"type": "dialogue"
+},
+"17": {
+"character": "Donald",
+"character_replacements": Array[Dictionary]([]),
+"id": "17",
+"next_id": "18",
+"notes": "",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Pikachu's newly discovered evolution is currently a mystery as we are still tying to figure out how to obtain it.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Pikachu's newly discovered evolution is currently a mystery as we are still tying to figure out how to obtain it.",
+"type": "dialogue"
+},
+"18": {
+"character": "Donald",
+"character_replacements": Array[Dictionary]([]),
+"id": "18",
+"next_id": "19",
+"notes": "",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "There are currently only 4 known trainers with this new evolution of Pikachu.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "There are currently only 4 known trainers with this new evolution of Pikachu.",
+"type": "dialogue"
+},
+"19": {
+"character": "Donald",
+"character_replacements": Array[Dictionary]([]),
+"id": "19",
+"next_id": "20",
+"notes": "",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "This new evolution gives Pikachu an oversized build along with a giant horn and a spiky tail.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "This new evolution gives Pikachu an oversized build along with a giant horn and a spiky tail.",
+"type": "dialogue"
+},
+"2": {
+"character": "Donald",
+"character_replacements": Array[Dictionary]([]),
+"id": "2",
+"next_id": "3",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Hello! Welcome!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hello! Welcome!",
+"type": "dialogue"
+},
+"20": {
+"id": "20",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "12",
+"type": "goto"
+},
+"21": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "21",
+"next_id": "22",
+"next_id_after": "39",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "How many gyms in this region are there?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "How many gyms in this region are there?",
+"type": "response"
+},
+"22": {
+"character": "Donald",
+"character_replacements": Array[Dictionary]([]),
+"id": "22",
+"next_id": "23",
+"notes": "",
+"parent_id": "21",
+"tags": PackedStringArray(),
+"text": "This region features a mix of gym challenges along with trial challenges.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "This region features a mix of gym challenges along with trial challenges.",
+"type": "dialogue"
+},
+"23": {
+"character": "Donald",
+"character_replacements": Array[Dictionary]([]),
+"id": "23",
+"next_id": "24",
+"notes": "",
+"parent_id": "21",
+"tags": PackedStringArray(),
+"text": "The first gym leader in this region is currently Darrell the Dragon Tamer.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "The first gym leader in this region is currently Darrell the Dragon Tamer.",
+"type": "dialogue"
+},
+"24": {
+"character": "Donald",
+"character_replacements": Array[Dictionary]([]),
+"id": "24",
+"next_id": "25",
+"notes": "",
+"parent_id": "21",
+"tags": PackedStringArray(),
+"text": "His team features a dratini, dragonair, and a applin.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "His team features a dratini, dragonair, and a applin.",
+"type": "dialogue"
+},
+"25": {
+"character": "Donald",
+"character_replacements": Array[Dictionary]([]),
+"id": "25",
+"next_id": "26",
+"notes": "",
+"parent_id": "21",
+"tags": PackedStringArray(),
+"text": "I would suggest catching an ice or fairy type. Dragon attacks are ineffective against Fairy types.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I would suggest catching an ice or fairy type. Dragon attacks are ineffective against Fairy types.",
+"type": "dialogue"
+},
+"26": {
+"id": "26",
+"is_snippet": false,
+"next_id": "end!",
+"parent_id": "21",
+"type": "goto"
+},
+"27": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "27",
+"next_id": "28",
+"next_id_after": "39",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Who are the criminals?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Who are the criminals?",
+"type": "response"
+},
+"28": {
+"character": "Donald",
+"character_replacements": Array[Dictionary]([]),
+"id": "28",
+"next_id": "29",
+"notes": "",
+"parent_id": "27",
+"tags": PackedStringArray(),
+"text": "ANTIFA has been around since I first took office and they have been terrorizing civillians ever since the pandemic.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "ANTIFA has been around since I first took office and they have been terrorizing civillians ever since the pandemic.",
+"type": "dialogue"
+},
+"29": {
+"character": "Donald",
+"character_replacements": Array[Dictionary]([]),
+"id": "29",
+"next_id": "30",
+"notes": "",
+"parent_id": "27",
+"tags": PackedStringArray(),
+"text": "A neo-nazi named Leo was able to catch Celebi and bring Adolf to the modern time.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "A neo-nazi named Leo was able to catch Celebi and bring Adolf to the modern time.",
+"type": "dialogue"
+},
+"3": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "4",
+"next_id_after": "39",
+"notes": "",
+"responses": PackedStringArray("3", "6", "12", "21", "27", "36"),
+"tags": PackedStringArray(),
+"text": "Tell Me About This!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Tell Me About This!",
+"type": "response"
+},
+"30": {
+"character": "Donald",
+"character_replacements": Array[Dictionary]([]),
+"id": "30",
+"next_id": "31",
+"notes": "",
+"parent_id": "27",
+"tags": PackedStringArray(),
+"text": "With the power of celebi he would also catch the multi-versal pokemon \"Genpoyx\".",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "With the power of celebi he would also catch the multi-versal pokemon \"Genpoyx\".",
+"type": "dialogue"
+},
+"31": {
+"character": "Donald",
+"character_replacements": Array[Dictionary]([]),
+"id": "31",
+"next_id": "32",
+"notes": "",
+"parent_id": "27",
+"tags": PackedStringArray(),
+"text": "He is currently on the lose and we have no way to track him down.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "He is currently on the lose and we have no way to track him down.",
+"type": "dialogue"
+},
+"32": {
+"character": "Donald",
+"character_replacements": Array[Dictionary]([]),
+"id": "32",
+"next_id": "33",
+"notes": "",
+"parent_id": "27",
+"tags": PackedStringArray(),
+"text": "Since then, ANTIFA and the Neo-Nazi's have been at a war and crime has only risen up.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Since then, ANTIFA and the Neo-Nazi's have been at a war and crime has only risen up.",
+"type": "dialogue"
+},
+"33": {
+"character": "Donald",
+"character_replacements": Array[Dictionary]([]),
+"id": "33",
+"next_id": "34",
+"notes": "",
+"parent_id": "27",
+"tags": PackedStringArray(),
+"text": "ANTIFA is currently in possession of two powerful mythical pokemon which have been in there control since 2021.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "ANTIFA is currently in possession of two powerful mythical pokemon which have been in there control since 2021.",
+"type": "dialogue"
+},
+"34": {
+"character": "Donald",
+"character_replacements": Array[Dictionary]([]),
+"id": "34",
+"next_id": "35",
+"notes": "",
+"parent_id": "27",
+"tags": PackedStringArray(),
+"text": "They would track down Uxie and Yvetal and catch both of them. Using there powers to commit crimes which they call \"equity\".",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "They would track down Uxie and Yvetal and catch both of them. Using there powers to commit crimes which they call \"equity\".",
+"type": "dialogue"
+},
+"35": {
+"id": "35",
+"is_snippet": false,
+"next_id": "end!",
+"parent_id": "27",
+"type": "goto"
+},
+"36": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "36",
+"next_id": "37",
+"next_id_after": "39",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Bye!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Bye!",
+"type": "response"
+},
+"37": {
+"character": "Donald",
+"character_replacements": Array[Dictionary]([]),
+"id": "37",
+"next_id": "38",
+"notes": "",
+"parent_id": "36",
+"tags": PackedStringArray(),
+"text": "Goodbye!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Goodbye!",
+"type": "dialogue"
+},
+"38": {
+"id": "38",
+"is_snippet": false,
+"next_id": "end!",
+"parent_id": "36",
+"type": "goto"
+},
+"39": {
+"character": "Donald",
+"character_replacements": Array[Dictionary]([]),
+"id": "39",
+"next_id": "41",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Bye! See Ya!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Bye! See Ya!",
+"type": "dialogue"
+},
+"4": {
+"character": "Donald",
+"character_replacements": Array[Dictionary]([]),
+"id": "4",
+"next_id": "5",
+"notes": "",
+"parent_id": "3",
+"tags": PackedStringArray(),
+"text": "This is currently in development!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "This is currently in development!",
+"type": "dialogue"
+},
+"41": {
+"id": "41",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"5": {
+"id": "5",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "3",
+"type": "goto"
+},
+"6": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "6",
+"next_id": "7",
+"next_id_after": "39",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "What's your favorite Pokemon?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "What's your favorite Pokemon?",
+"type": "response"
+},
+"7": {
+"character": "Donald",
+"character_replacements": Array[Dictionary]([]),
+"id": "7",
+"next_id": "8",
+"notes": "",
+"parent_id": "6",
+"tags": PackedStringArray(),
+"text": "Defintley my Yungoos!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Defintley my Yungoos!",
+"type": "dialogue"
+},
+"8": {
+"character": "Donald",
+"character_replacements": Array[Dictionary]([]),
+"id": "8",
+"next_id": "9",
+"notes": "",
+"parent_id": "6",
+"tags": PackedStringArray(),
+"text": "He has the most perfect hair!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "He has the most perfect hair!",
+"type": "dialogue"
+},
+"9": {
+"character": "Donald",
+"character_replacements": Array[Dictionary]([]),
+"id": "9",
+"next_id": "10",
+"notes": "",
+"parent_id": "6",
+"tags": PackedStringArray(),
+"text": "*Sigh*",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "*Sigh*",
+"type": "dialogue"
+}
+}
+raw_text = "~ start
+Donald: Hello! Welcome!
+- Tell Me About This!
+	Donald: This is currently in development!
+	=> END
+- What's your favorite Pokemon?
+	Donald: Defintley my Yungoos!
+	Donald: He has the most perfect hair!
+	Donald: *Sigh*
+	Donald: We have been through so much together.
+	=> END
+- What are the starters in this region?
+	Donald: We have the fire type Bublasaur, the water type Charmander, and the grass type Squirtle. You also have the option to pick a Pikachu that evolves into a Electric/Water type.
+	Donald: Bulbasaur's final evolution is Fire/Grass.
+	Donald: Charmander's final evolution is Water/Ice.
+	Donald: Squirtle's final evolution is Grass/Fairy.
+	Donald: Pikachu's newly discovered evolution is currently a mystery as we are still tying to figure out how to obtain it.
+	Donald: There are currently only 4 known trainers with this new evolution of Pikachu.
+	Donald: This new evolution gives Pikachu an oversized build along with a giant horn and a spiky tail.
+	=> END
+- How many gyms in this region are there?
+	Donald: This region features a mix of gym challenges along with trial challenges.
+	Donald: The first gym leader in this region is currently Darrell the Dragon Tamer.
+	Donald: His team features a dratini, dragonair, and a applin.
+	Donald: I would suggest catching an ice or fairy type. Dragon attacks are ineffective against Fairy types.
+	=> END!
+- Who are the criminals?
+	Donald: ANTIFA has been around since I first took office and they have been terrorizing civillians ever since the pandemic.
+	Donald: A neo-nazi named Leo was able to catch Celebi and bring Adolf to the modern time.
+	Donald: With the power of celebi he would also catch the multi-versal pokemon \"Genpoyx\".
+	Donald: He is currently on the lose and we have no way to track him down.
+	Donald: Since then, ANTIFA and the Neo-Nazi's have been at a war and crime has only risen up. 
+	Donald: ANTIFA is currently in possession of two powerful mythical pokemon which have been in there control since 2021.
+	Donald: They would track down Uxie and Yvetal and catch both of them. Using there powers to commit crimes which they call \"equity\".
+	=> END!
+- Bye!
+	Donald: Goodbye! 
+	=> END!
+Donald: Bye! See Ya!
+
+=> END"
+metadata/dialogue_manager_version = "2.36.0"

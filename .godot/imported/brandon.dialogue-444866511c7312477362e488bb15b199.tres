@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_p8g4l"]
+
+[resource]
+script = ExtResource("1_p8g4l")
+using_states = PackedStringArray()
+titles = {
+"brandon": "3"
+}
+character_names = PackedStringArray("Brandon")
+first_title = "3"
+lines = {
+"1": {
+"id": "1",
+"next_id": "3",
+"text": "brandon",
+"type": "title"
+},
+"3": {
+"character": "Brandon",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "4",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Welcome!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Welcome!",
+"type": "dialogue"
+},
+"4": {
+"character": "Brandon",
+"character_replacements": Array[Dictionary]([]),
+"id": "4",
+"next_id": "6",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Walk up to this sentret right here and try out your first battle!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Walk up to this sentret right here and try out your first battle!",
+"type": "dialogue"
+},
+"6": {
+"id": "6",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+}
+}
+raw_text = "~ brandon
+
+Brandon: Welcome!
+Brandon: Walk up to this sentret right here and try out your first battle!
+
+=> END"
+metadata/dialogue_manager_version = "2.36.0"

@@ -1,0 +1,278 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_qq25h"]
+
+[resource]
+script = ExtResource("1_qq25h")
+using_states = PackedStringArray()
+titles = {
+"hitler1": "3"
+}
+character_names = PackedStringArray("Hitler")
+first_title = "3"
+lines = {
+"1": {
+"id": "1",
+"next_id": "3",
+"text": "hitler1",
+"type": "title"
+},
+"10": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "10",
+"next_id": "11",
+"next_id_after": "22",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "How did you get here?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "How did you get here?",
+"type": "response"
+},
+"11": {
+"character": "Hitler",
+"character_replacements": Array[Dictionary]([]),
+"id": "11",
+"next_id": "12",
+"notes": "",
+"parent_id": "10",
+"tags": PackedStringArray(),
+"text": "I was being surrounded in a bunker by multiple US forces.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I was being surrounded in a bunker by multiple US forces.",
+"type": "dialogue"
+},
+"12": {
+"character": "Hitler",
+"character_replacements": Array[Dictionary]([]),
+"id": "12",
+"next_id": "13",
+"notes": "",
+"parent_id": "10",
+"tags": PackedStringArray(),
+"text": "Out of no where... a young boy in his teenage years appeared through a sudden flash and told me \"You are about to die you need yo come with me\".",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Out of no where... a young boy in his teenage years appeared through a sudden flash and told me \"You are about to die you need yo come with me\".",
+"type": "dialogue"
+},
+"13": {
+"character": "Hitler",
+"character_replacements": Array[Dictionary]([]),
+"id": "13",
+"next_id": "14",
+"notes": "",
+"parent_id": "10",
+"tags": PackedStringArray(),
+"text": "He explained he was from the future but I didn't believe it. Then celebi came out of his backpack and used some sort of flash move.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "He explained he was from the future but I didn't believe it. Then celebi came out of his backpack and used some sort of flash move.",
+"type": "dialogue"
+},
+"14": {
+"character": "Hitler",
+"character_replacements": Array[Dictionary]([]),
+"id": "14",
+"next_id": "15",
+"notes": "",
+"parent_id": "10",
+"tags": PackedStringArray(),
+"text": "Next thing you know, I'm being told I traveled to the year 2025 and I was prounced dead.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Next thing you know, I'm being told I traveled to the year 2025 and I was prounced dead.",
+"type": "dialogue"
+},
+"15": {
+"character": "Hitler",
+"character_replacements": Array[Dictionary]([]),
+"id": "15",
+"next_id": "16",
+"notes": "",
+"parent_id": "10",
+"tags": PackedStringArray(),
+"text": "Now my goal is to restore my party to it's glory days and beyond.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Now my goal is to restore my party to it's glory days and beyond.",
+"type": "dialogue"
+},
+"16": {
+"id": "16",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "10",
+"type": "goto"
+},
+"17": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "17",
+"next_id": "18",
+"next_id_after": "22",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "What do you think of Donald Trump?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "What do you think of Donald Trump?",
+"type": "response"
+},
+"18": {
+"character": "Hitler",
+"character_replacements": Array[Dictionary]([]),
+"id": "18",
+"next_id": "19",
+"notes": "",
+"parent_id": "17",
+"tags": PackedStringArray(),
+"text": "Hate him.... Fuck that bitch ass faggot.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hate him.... Fuck that bitch ass faggot.",
+"type": "dialogue"
+},
+"19": {
+"character": "Hitler",
+"character_replacements": Array[Dictionary]([]),
+"id": "19",
+"next_id": "20",
+"notes": "",
+"parent_id": "17",
+"tags": PackedStringArray(),
+"text": "He will never be as great as me...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "He will never be as great as me...",
+"type": "dialogue"
+},
+"20": {
+"id": "20",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "17",
+"type": "goto"
+},
+"21": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "21",
+"next_id": "22",
+"next_id_after": "22",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Bye",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Bye",
+"type": "response"
+},
+"22": {
+"id": "22",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"3": {
+"character": "Hitler",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "4",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Hello world!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hello world!",
+"type": "dialogue"
+},
+"4": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "4",
+"next_id": "5",
+"next_id_after": "22",
+"notes": "",
+"responses": PackedStringArray("4", "10", "17", "21"),
+"tags": PackedStringArray(),
+"text": "What is your favorite Pokemon?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "What is your favorite Pokemon?",
+"type": "response"
+},
+"5": {
+"character": "Hitler",
+"character_replacements": Array[Dictionary]([]),
+"id": "5",
+"next_id": "6",
+"notes": "",
+"parent_id": "4",
+"tags": PackedStringArray(),
+"text": "Definltey either Weezing or the oven form of Rotom.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Definltey either Weezing or the oven form of Rotom.",
+"type": "dialogue"
+},
+"6": {
+"character": "Hitler",
+"character_replacements": Array[Dictionary]([]),
+"id": "6",
+"next_id": "7",
+"notes": "",
+"parent_id": "4",
+"tags": PackedStringArray(),
+"text": "Hint hint... that is why I give all my nazi's weezings and rotoms. Like Team Rocket really thinks raticates are good.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hint hint... that is why I give all my nazi's weezings and rotoms. Like Team Rocket really thinks raticates are good.",
+"type": "dialogue"
+},
+"7": {
+"character": "Hitler",
+"character_replacements": Array[Dictionary]([]),
+"id": "7",
+"next_id": "8",
+"notes": "",
+"parent_id": "4",
+"tags": PackedStringArray(),
+"text": "Like nahh nigga...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Like nahh nigga...",
+"type": "dialogue"
+},
+"8": {
+"character": "Hitler",
+"character_replacements": Array[Dictionary]([]),
+"id": "8",
+"next_id": "9",
+"notes": "",
+"parent_id": "4",
+"tags": PackedStringArray(),
+"text": "I also want to burn the champion's little jewfro ass with his own Typhlosion.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I also want to burn the champion's little jewfro ass with his own Typhlosion.",
+"type": "dialogue"
+},
+"9": {
+"id": "9",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "4",
+"type": "goto"
+}
+}
+raw_text = "~ hitler1
+
+Hitler: Hello world!
+- What is your favorite Pokemon?
+	Hitler: Definltey either Weezing or the oven form of Rotom.
+	Hitler: Hint hint... that is why I give all my nazi's weezings and rotoms. Like Team Rocket really thinks raticates are good.
+	Hitler: Like nahh nigga...
+	Hitler: I also want to burn the champion's little jewfro ass with his own Typhlosion.
+	=> END
+- How did you get here?
+	Hitler: I was being surrounded in a bunker by multiple US forces.
+	Hitler: Out of no where... a young boy in his teenage years appeared through a sudden flash and told me \"You are about to die you need yo come with me\".
+	Hitler: He explained he was from the future but I didn't believe it. Then celebi came out of his backpack and used some sort of flash move.
+	Hitler: Next thing you know, I'm being told I traveled to the year 2025 and I was prounced dead.
+	Hitler: Now my goal is to restore my party to it's glory days and beyond.
+	=> END
+- What do you think of Donald Trump?
+	Hitler: Hate him.... Fuck that bitch ass faggot.
+	Hitler: He will never be as great as me...
+	=> END
+- Bye
+=> END"
+metadata/dialogue_manager_version = "2.36.0"

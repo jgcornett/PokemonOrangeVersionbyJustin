@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://php158bln0xx"
+path="res://.godot/imported/mrmime1.dialogue-d31e4c7d6955359c85c2f5ea32058818.tres"
+
+[deps]
+
+source_file="res://mrmime1.dialogue"
+dest_files=["res://.godot/imported/mrmime1.dialogue-d31e4c7d6955359c85c2f5ea32058818.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxqbe2kf3abs1"]
+
+[ext_resource type="Script" path="res://scripts/door.gd" id="1_5i78i"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1jskv"]
+radius = 15.4171
+
+[node name="door" type="Area2D"]
+script = ExtResource("1_5i78i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_1jskv")
+
+[node name="spawn" type="Marker2D" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

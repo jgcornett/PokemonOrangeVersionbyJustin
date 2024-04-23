@@ -1,0 +1,145 @@
+[gd_scene load_steps=12 format=3 uid="uid://dpyktr1wb2d0n"]
+
+[ext_resource type="Texture2D" uid="uid://dhrvhrho7p4t8" path="res://platform stuff/pikachu_sprite_by_aniki0001_darlp9n.png" id="1_ispq8"]
+[ext_resource type="Script" path="res://player2.cs" id="1_wow11"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vclth"]
+radius = 3.0
+height = 6.0
+
+[sub_resource type="Animation" id="Animation_f600y"]
+resource_name = "IdleLeft"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [7, 6]
+}
+
+[sub_resource type="Animation" id="Animation_w1iws"]
+resource_name = "IdleRight"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [11, 10]
+}
+
+[sub_resource type="Animation" id="Animation_lqaao"]
+resource_name = "Jump"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [9]
+}
+
+[sub_resource type="Animation" id="Animation_s16s4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [11]
+}
+
+[sub_resource type="Animation" id="Animation_1tiw6"]
+resource_name = "RunLeft"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.3, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [5, 7, 4, 7]
+}
+
+[sub_resource type="Animation" id="Animation_5mf8c"]
+resource_name = "RunRight"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [9, 10, 8, 11]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_md3ce"]
+_data = {
+"IdleLeft": SubResource("Animation_f600y"),
+"IdleRight": SubResource("Animation_w1iws"),
+"Jump": SubResource("Animation_lqaao"),
+"RESET": SubResource("Animation_s16s4"),
+"RunLeft": SubResource("Animation_1tiw6"),
+"RunRight": SubResource("Animation_5mf8c")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_y804g"]
+radius = 3.50007
+
+[node name="Pikaplatformer" type="CharacterBody2D" groups=["Player"]]
+position = Vector2(126, 111)
+script = ExtResource("1_wow11")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(10, 9)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_ispq8")
+hframes = 4
+vframes = 4
+frame = 11
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(10, 13)
+shape = SubResource("CapsuleShape2D_vclth")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_md3ce")
+}
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(10.125, 13)
+shape = SubResource("CircleShape2D_y804g")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

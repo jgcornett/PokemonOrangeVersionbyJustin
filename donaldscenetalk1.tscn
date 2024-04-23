@@ -1,0 +1,208 @@
+[gd_scene load_steps=12 format=3 uid="uid://bkscm14bfwy50"]
+
+[ext_resource type="Script" path="res://donaldscenetalk1.gd" id="1_t0jvt"]
+[ext_resource type="Texture2D" uid="uid://bkkdv8vay78kb" path="res://9DE64097-ECFE-48EF-93BE-3D86AECB72FA.jpeg" id="2_uayi3"]
+[ext_resource type="Texture2D" uid="uid://bh6lly00bok5y" path="res://3E8C894A-1DD3-4559-BFB8-80F338BBAE4A.jpeg" id="3_2auyp"]
+[ext_resource type="Texture2D" uid="uid://6yfjs8twdekw" path="res://5606E220-B9CE-40D2-A55A-C8370AA48AFE.jpeg" id="4_mtdun"]
+[ext_resource type="Texture2D" uid="uid://bn2gy08r5sncn" path="res://EB552556-736A-4D5F-91AD-A034E4D10863.jpeg" id="5_os67k"]
+[ext_resource type="Texture2D" uid="uid://dvt5v3jtxhpp1" path="res://BA4B85B2-70F4-4DAB-8355-E169623A5D1B.jpeg" id="6_pjtgu"]
+[ext_resource type="Texture2D" uid="uid://bksn1toqqmxvs" path="res://redscenes/AB40E08C-897F-45DB-9FE5-5B062C994B39 (1).jpeg" id="6_rvaa8"]
+[ext_resource type="Texture2D" uid="uid://dfedy7pqtnxci" path="res://redscenes/9B7ECA4B-49CA-4FF7-9CA3-B151BA40EF9C (1).jpeg" id="7_mvrt3"]
+[ext_resource type="Texture2D" uid="uid://3i4kjyws8aio" path="res://redscenes/F8299E50-7F1E-4AFA-B0A1-20006D297710 (1).jpeg" id="8_pfbbd"]
+[ext_resource type="Texture2D" uid="uid://cwcibj5lexxki" path="res://redscenes/E1BA4235-B62C-41ED-B895-7541D02EFC29.jpeg" id="9_827js"]
+[ext_resource type="AudioStream" uid="uid://c603ukx6lc3tf" path="res://youtube_c0SuIMUoShI_audio.mp3" id="11_7erat"]
+
+[node name="Redscenetalk1" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 382.0
+offset_bottom = 229.0
+script = ExtResource("1_t0jvt")
+
+[node name="redtalk2" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -12.0
+offset_right = 380.0
+offset_bottom = 227.0
+texture = ExtResource("2_uayi3")
+expand_mode = 1
+
+[node name="redtalk3" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -12.0
+offset_right = 380.0
+offset_bottom = 227.0
+texture = ExtResource("2_uayi3")
+expand_mode = 1
+
+[node name="redtalk4" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -12.0
+offset_right = 380.0
+offset_bottom = 227.0
+texture = ExtResource("3_2auyp")
+expand_mode = 1
+
+[node name="redtalk5" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -12.0
+offset_right = 380.0
+offset_bottom = 227.0
+texture = ExtResource("4_mtdun")
+expand_mode = 1
+
+[node name="redtalk6" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -12.0
+offset_right = 380.0
+offset_bottom = 227.0
+texture = ExtResource("5_os67k")
+expand_mode = 1
+
+[node name="redtalk7" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -12.0
+offset_right = 380.0
+offset_bottom = 227.0
+texture = ExtResource("6_pjtgu")
+expand_mode = 1
+
+[node name="redtalk8" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -12.0
+offset_right = 380.0
+offset_bottom = 227.0
+texture = ExtResource("6_rvaa8")
+expand_mode = 1
+
+[node name="redtalk9" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -12.0
+offset_right = 380.0
+offset_bottom = 227.0
+texture = ExtResource("6_rvaa8")
+expand_mode = 1
+
+[node name="redtalk10" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -12.0
+offset_right = 380.0
+offset_bottom = 227.0
+texture = ExtResource("7_mvrt3")
+expand_mode = 1
+
+[node name="redtalk11" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -12.0
+offset_right = 380.0
+offset_bottom = 227.0
+texture = ExtResource("8_pfbbd")
+expand_mode = 1
+
+[node name="redtalk12" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -12.0
+offset_right = 380.0
+offset_bottom = 227.0
+texture = ExtResource("9_827js")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 20.5061
+offset_top = 132.229
+offset_right = 69.5061
+offset_bottom = 163.229
+text = "NEXT"
+
+[node name="Button2" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 132.0
+offset_right = 70.0
+offset_bottom = 163.0
+text = "NEXT"
+
+[node name="Button3" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 132.0
+offset_right = 70.0
+offset_bottom = 163.0
+text = "NEXT"
+
+[node name="Button4" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 132.0
+offset_right = 70.0
+offset_bottom = 163.0
+text = "NEXT"
+
+[node name="Button8" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 159.0
+offset_top = 185.0
+offset_right = 208.0
+offset_bottom = 216.0
+text = "NEXT"
+
+[node name="Button9" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 132.0
+offset_right = 70.0
+offset_bottom = 163.0
+text = "OK"
+
+[node name="Button5" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 132.0
+offset_right = 70.0
+offset_bottom = 163.0
+text = "YES"
+
+[node name="Button7" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 132.0
+offset_right = 70.0
+offset_bottom = 163.0
+text = "OK"
+
+[node name="Button6" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 132.0
+offset_right = 149.0
+offset_bottom = 163.0
+text = "NO"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Control"]
+stream = ExtResource("11_7erat")
+volume_db = 5.2
+autoplay = true
+
+[connection signal="pressed" from="Control/Button" to="Control" method="_on_button_pressed"]
+[connection signal="pressed" from="Control/Button2" to="Control" method="_on_button_2_pressed"]
+[connection signal="pressed" from="Control/Button3" to="Control" method="_on_button_3_pressed"]
+[connection signal="pressed" from="Control/Button4" to="Control" method="_on_button_4_pressed"]
+[connection signal="pressed" from="Control/Button8" to="Control" method="_on_button_8_pressed"]
+[connection signal="pressed" from="Control/Button9" to="Control" method="_on_button_9_pressed"]
+[connection signal="pressed" from="Control/Button5" to="Control" method="_on_button_5_pressed"]
+[connection signal="pressed" from="Control/Button7" to="Control" method="_on_button_7_pressed"]
+[connection signal="pressed" from="Control/Button6" to="Control" method="_on_button_6_pressed"]
